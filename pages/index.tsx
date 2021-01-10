@@ -1,10 +1,12 @@
 // pages/index.js
 import Link from 'next/link';
 import * as React from "react";
+import { Header } from "../components/Header";
 
 export default function Home({ blog }) {
   return (
-    <div>
+    <>
+      <Header />
       <ul>
         {blog.map(blog => (
           <li key={blog.id}>
@@ -14,7 +16,7 @@ export default function Home({ blog }) {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 }
 
