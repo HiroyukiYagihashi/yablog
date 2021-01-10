@@ -8,7 +8,7 @@ export default class MyDocument extends Document<Props> {
       <Html lang="ja">
         <Head>
           <meta charSet="utf-8" />
-          <link rel="shurtcut icon" href="../public/favicon.ico" />
+          <link rel="shurtcut icon" href="/public/favicon.ico" />
         </Head>
         <body>
           <Main />
