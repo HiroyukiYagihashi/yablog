@@ -2,21 +2,26 @@
 import Link from 'next/link';
 import * as React from "react";
 import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
+import { Profile } from "../components/Profile";
 
 export default function Home({ blog }) {
   return (
-    <>
+    <div className="container mx-auto max-w-screen-lg">
       <Header />
+      <Profile />
       <ul>
         {blog.map(blog => (
-          <li key={blog.id}>
-            <Link href={`blog/${blog.id}`}>
-              <a>{blog.title}</a>
-            </Link>
-          </li>
+          <Link href={`blog/${blog.id}`}>
+            <li key={blog.id} className="blog-list hover:bg-gray-100">
+              <a className="blog-list-title">{blog.title}</a>
+              <p className="blog-list-published-at">{blog.publishedAt}</p>
+            </li>
+          </Link>
         ))}
       </ul>
-    </>
+      <Footer />
+    </div>
   );
 }
 
