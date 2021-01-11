@@ -5,10 +5,18 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { Profile } from "../components/Profile";
 import {Categories} from "../components/Categories";
+import Head from "../components/Head";
 
 export default function Home({ blog, categories }) {
   return (
     <div className="container mx-auto max-w-screen-lg">
+      <Head
+        title="hiroyuki blog"
+        description="Hiroyuki Yagihashiのブログ"
+        keyword="test"
+        image=""
+        url=""
+      />
       <Header />
       <Profile />
       <ul>
