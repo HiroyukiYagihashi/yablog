@@ -7,7 +7,7 @@ type Props = {};
 export const Profile: FC<Props> = (props) => {
   return (
     <section className="py-5 flex">
-      <img src="/icon.jpg" className="w-10 h-10 rounded-full mr-3 mt-1.5"/>
+      <img src="/icon.svg" className="w-10 h-10 rounded-full mr-3 mt-1.5"/>
       <div>
         <Link href="https://hiroy.uk">
           <a className="font-bold text-blue-500 hover:underline">Hiroyuki Yagihashi</a>
