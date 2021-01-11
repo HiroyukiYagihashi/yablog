@@ -26,10 +26,6 @@
     @apply text-gray-900 leading-normal break-words;
 }
 
-.markdown > * + * {
-    @apply mt-0 mb-4;
-}
-
 .markdown li + li {
     @apply mt-1;
 }

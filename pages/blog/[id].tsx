@@ -8,7 +8,7 @@ export default function BlogId({ blog }) {
     <main className="container mx-auto max-w-screen-lg">
       <Header />
       <h1 className="text-4xl font-bold">{blog.title}</h1>
-      <p className="blog-list-published-at">{blog.publishedAt}</p>
+      <p className="blog-list-published-at mb-5">{blog.publishedAt}</p>
       {blog.categories.length !== 0 && <Categories categories={blog.categories} />}
       <article className="markdown"
         dangerouslySetInnerHTML={{
