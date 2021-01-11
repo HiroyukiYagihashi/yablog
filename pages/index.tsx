@@ -13,7 +13,7 @@ export default function Home({ blog, categories }) {
       <Profile />
       <ul>
         {blog.map(blog => (
-          <Link href={`blog/${blog.id}`}>
+          <Link href={`/blog/${blog.id}`}>
             <li key={blog.id} className="blog-list hover:bg-gray-100">
               <a className="blog-list-title font-bold cursor-pointer">{blog.title}</a>
               <p className="blog-list-published-at">{blog.publishedAt}</p>
